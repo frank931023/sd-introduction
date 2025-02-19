@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>這是仁祥的自我介紹</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 自訂顏色 */
+        :root {
+            --main-color: #59524c;
+            --secondary-color: #8fa5b6;
+            --accent-color: #e07a5f;
+            --bg-color: #f4f1de;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--bg-color)] text-gray-800">
+
+    <div class="max-w-4xl mx-auto mt-10 p-8 bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+        <!-- 左側：資訊 -->
+        <div class="w-full md:w-2/3 p-5">
+            <!-- 名字 -->
+            <h1 class="text-4xl font-bold text-[var(--main-color)]">魏仁祥</h1>
+
+            <!-- 生日 & 城市 -->
+            <p class="text-lg text-gray-600 mt-2">
+                🎂 2004年10月23日 | 📍 台中
+            </p>
+
+            <!-- 興趣 -->
+            <div class="mt-5">
+                <h2 class="text-xl font-semibold text-[var(--secondary-color)]">✨ 興趣</h2>
+                <ul class="list-disc pl-5 mt-2 text-gray-700">
+                    <li>打籃球 📸</li>
+                    <li>旅行 ✈️</li>
+                    <li>睡覺 💻</li>
+                    <li>音樂 🎵</li>
+                    <li>閱讀 📖</li>
+                </ul>
+            </div>
+
+            <!-- 大學 & 科系 -->
+            <div class="mt-5">
+                <h2 class="text-xl font-semibold text-[var(--secondary-color)]">🎓 學校科系</h2>
+                <p class="mt-2 text-gray-700">國立中央大學資訊管理學系大二</p>
+            </div>
+
+            <!-- 聯絡方式 -->
+            <div class="mt-5">
+                <h2 class="text-xl font-semibold text-[var(--secondary-color)]">📩 聯絡方式</h2>
+                <div class="flex space-x-4 mt-3">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            alt="Instagram" class="w-10 hover-grow">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                            alt="Facebook" class="w-10 hover-grow">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右側：個人照片 -->
+        <div class="w-full md:w-1/3 p-5 flex justify-center">
+            <img src="./smile.jpg" alt="個人照片" class="rounded-full border-4 border-[var(--accent-color)] shadow-lg">
+        </div>
+    </div>
+
+</body>
+
+</html>
